@@ -143,7 +143,7 @@ Knowing the file extension means AnyPalette.js can often pick the correct palett
 - `options.data` - the palette file data to load, as a binary string or [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) or Node.js [`Buffer`](https://nodejs.org/api/buffer.html#buffer_class_buffer) or [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array) (but **not** any other `TypedArray` or `DataView`). In the case of a binary string, Unicode names for colors do not work, so an `ArrayBuffer` is preferred.
 - `options.filePath` - a path to a palette file, for Node.js usage
 - `options.fileName` (optional) - the file name, if you have it, including the file extension - can be obtained automatically from `options.file` or `options.filePath`
-- `options.fileExt` (optional) - the file extension, if you have it, *excluding* the dot, e.g. `"pal"` - can be obtained automatically from `options.fileName` or `options.file` or `options.filePath`
+- `options.fileExt` (optional) - the file extension, if you have it, with or without the dot, e.g. `"pal"` - can be obtained automatically from `options.fileName` or `options.file` or `options.filePath`
 - `callback(error, palette, formatUsed, matchedFileExtension)` (required) - called when palette loading is finished, either with an error (in the first argument) or with the remaining arguments in the case of success:
 	- `palette`: a [`Palette`](#class-palette-extends-array)
 	- `formatUsed`: a [`Format`](#class-format) object representing the file format, or more generic loader, that was used to parse the palette

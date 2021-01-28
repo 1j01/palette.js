@@ -241,8 +241,7 @@ normalize_options = (o = {})->
 	# o.minColors ?= 2
 	# o.maxColors ?= 256
 	o.fileName ?= o.file?.name ? (if o.filePath then require("path").basename(o.filePath))
-	o.fileExt ?= "#{o.fileName}".split(".").pop()
-	o.fileExt = "#{o.fileExt}".toLowerCase()
+	o.fileExt = "#{o.fileExt ? o.fileName}".split(".").pop()
 	o
 
 AnyPalette = {

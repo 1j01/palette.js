@@ -17,7 +17,8 @@ for potential future corrections.
 		Click to see more.
 	</summary>
 
-Nothing here yet.
+### Added
+- Dot is now allowed in `fileExt` option (with or without the dot works)
 
 </details>
 
